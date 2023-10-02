@@ -1,0 +1,22 @@
+@baseUrl  = http://localhost:3333/v1
+
+###
+
+GET {{ baseUrl }}/tweets HTTP/1.1
+content-type: application/json
+
+
+###
+
+POST {{ baseUrl }}/tweets HTTP/1.1
+content-type: application/json
+
+{
+    "description": "My first tweet"
+}
+
+
+###
+
+DELETE  {{ baseUrl }}/tweets/01774207-ec67-4556-a2f2-929dfe43be25 HTTP/1.1
+content-type: application/json
